@@ -2,9 +2,10 @@ import requests
 from datetime import datetime
 import smtplib
 import time
+import os
 
-MY_EMAIL = "dtester752@gmail.com"
-MY_PASSWORD = "testemail"
+MY_EMAIL = os.environ["MY_EMAIL"]
+MY_PASSWORD = os.environ["MY_EMAIL_PASSWORD"]
 MY_LAT = 37.548271
 MY_LONG = -121.988571
 
